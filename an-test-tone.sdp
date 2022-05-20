@@ -1,0 +1,15 @@
+v=0
+o=- 1000 1 IN IP4 192.168.1.179
+s=AN_AES67_TestTone
+c=IN IP4 239.69.128.165/1
+t=0 0
+m=audio 5004 RTP/AVP 98
+i=Channels 1-2
+a=sync-time:0
+a=framecount:48
+a=rtpmap:98 L24/48000/2
+a=recvonly
+a=ptime:1
+a=ts-refclk:ptp=IEEE1588-2008:traceable
+a=mediaclk:direct=0
+a=clock-domain:PTPv2 0
